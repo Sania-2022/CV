@@ -1,0 +1,98 @@
+/*FORMAT MOBILE*/
+@media screen and (min-width:350px) and (max-width:780px)
+{
+  .enfant{
+  display: block;
+  width: 100%;
+  }
+header{
+  width: 100%;
+}
+}
+
+/*FORMAT SITE*/
+header{
+  background-image: url(../img/fond_header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+header h1{
+  font-style: italic;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.parent{
+  display: flex;
+  width: 1700px;
+  height:950px;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+.enfant{
+width:280px ;
+height:200px;
+}
+
+.un{
+ background-image: url(../img/img1.jpg);
+ background-size: cover;
+}
+.deux{
+ background-image: url(../img/img2.jpg);
+ background-size: cover;
+}
+.trois{
+ background-image: url(../img/img3.jpg);
+ background-size: cover;}
+.quatre{
+ background-image: url(../img/img4.jpg);
+ background-size: cover;}
+.cinq{
+ background-image: url(../img/img5.jpg);
+ background-size: cover;
+}
+.six{
+  background-image: url(../img/img6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.enfant img{
+  width:100%;
+  height: 100%;
+  opacity: 0.8;
+}
+img,div:hover{opacity:1;}
+
+.enfant p{
+  text-align: center;
+}
+.enfant p{
+  font-size:30px;
+  position: absolute;
+  background-color: white;
+  width: 10%;
+  opacity:0.5;
+}
+.enfant p:hover{
+  opacity:1;
+}
+.Compétences img{
+  width: 100px;
+  padding: 9%;
+
+}
+.flex{
+  flex-direction: row, wrap;
+  justify-content: space-between;
+}
+.projet{
+  width: 300px;
+  height: 200px;
+  background-color: lightgrey;
+  border: 2px black;
+}
