@@ -1,27 +1,7 @@
-/*FORMAT MOBILE*/
-@media screen and (min-width:350px) and (max-width:780px)
-{
-  .div{
-  display: block;
-  width: 100%;
-  }
-header{
-  width: 100%;}
-}
-header h1{
-  color: white;
-  text-align: center;
-  opacity: 0.8;
-  font-style: italic;
-  font-weight:lighter;
-  padding-top: 5%;
-
-}
-
 /*FORMAT SITE*/
 h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
 h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
-p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
+p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 200; line-height: 20px; }
 
 #qui,#comp,#parc,#form,#contact{
   font-size: 70px;
@@ -35,10 +15,16 @@ p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px
 
 #présentation{
   text-align: center;
+
+}
+.présentation{
+  padding:100px;
+  height: 500px;
 }
 nav{
   background-image: linear-gradient(to right top, #ff7948, #ff3a5c, #ff0086, #e200c0, #7900ff);
   opacity: 0.7;
+  text-align: center;
 }
 
 header{
@@ -47,37 +33,46 @@ header{
   background-size: cover;
 }
 li{
-  color:white;
+color:white;
 display: inline-block;
 padding: 50px;
 font-family:
 "Helvetica";
 font-size: 23px;
 font-weight: bold;
-opacity:0.5; }
+opacity:0.5;
+text-align: center;}
 
 li:hover{
+  background-color: #000000;
   opacity:1;
-  animation: shake 0.5s;
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .compétences img{
   width: 80px;
   padding: 9%;
 }
+.compétences{
+  display: flex;
+  justify-content: space-around;
+}
+.soft,.hard{
+  display: inline-block;
+  width: 20%;
+  height: 480px;
+  background-image: linear-gradient(to right top, #ff7948, #ff3a5c, #ff0086, #e200c0, #7900ff);
+  text-align:center;
+  color: white;
+  border-radius: 100px;
+}
+.soft{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+
 .formation{
   height: 300px;
   text-align: center;
@@ -86,4 +81,31 @@ li:hover{
 .parcours{
   height: 300px;
   text-align: center;
+}
+.footer{
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding: 30px;
+}
+
+/*FORMAT MOBILE*/
+
+@media screen and (max-width:768px)
+{
+header{
+  background-image: url(../img/back_mobile.jpg);
+  background-position:center;
+  height: 178vh;
+  width:100%;}
+
+}
+header h1{
+  color: white;
+  text-align: center;
+  opacity: 0.8;
+  font-style: italic;
+  font-weight:lighter;
+  padding-top: 5%;
+
 }
