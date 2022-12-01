@@ -60,11 +60,22 @@ a{
 .présentation,.parcours,.compétences{
   padding:100px;
 }
+.PRESENTATION{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.p{
+  font-size: 40px;
+  font-style: italic;
+  font-weight: lighter;
+  color:#47167d;
+}
 nav{
   background-image: linear-gradient(to right top, #ff7948, #ff3a5c, #ff0086, #e200c0, #7900ff);
   opacity: 0.7;
   text-align: center;
-  position: sticky;
 }
 
 header{
@@ -115,6 +126,9 @@ li:hover{
 }
 .hard p{
   color: #47167d;
+}
+#ici{
+  color:#47167d;
 }
 
 .soft{
