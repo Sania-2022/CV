@@ -51,7 +51,7 @@ line-height: 15.4px;
 position: relative;
 padding-top: 75px;
 letter-spacing: 0.5em;
-padding: 75px 0 75px
+padding: 50px 300px 100px;
 }
 #ap{
   font-size: 100px;
@@ -242,8 +242,10 @@ nav{
 #ap{
   font-size: 30px;
 }
+#trav{
+  margin: auto;
 }
-
+}
 
 /*FORMAT MOBILE*/
 
