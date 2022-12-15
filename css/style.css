@@ -88,6 +88,41 @@ a{
   height: 100vh;
 
 }
+
+
+#phrase{
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px;
+  color: rgba(255,255,255,.70);
+  position: absolute;
+  left: 30%;
+  top: 10%;
+
+}
+
+/* Animation */
+#phrase{
+  animation: animated-text 4s steps(29,end) 3s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 1050px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
 .p{
   font-size: 40px;
   font-style: italic;
@@ -463,19 +498,28 @@ nav li:hover{
   padding-left: 50px;
   box-sizing: border-box;
 }
-.hover{}
+
 .slide-img{
   width: 33%;
   height: 50%;
   text-align: center;
 }
 
+#burger{
+  display: none;
+}
+#phrase{
+  width: 100%;
+}
 /*FORMAT MOBILE*/
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px){
 
-  .présentation,.formation,.parcours,.compétences,.réalisations,.div{
-    width: 100%;
+  header,nav,#bloc,.présentation,.formation,.parcours,.compétences,.div{
+    width: 360%;
+  }
+  .réalisations{
+    width: 350%;
   }
   .tabs{
     margin: auto;
@@ -486,23 +530,43 @@ nav li:hover{
     width: 100%;
   }
   h1, span,{
-    font-size: 30px;
+    font-size: 65px;
   }
   h2{
-    font-size: 20px;
+    font-size: 40px;
   }
   p{
-    font-size:15px;
+    font-size:30px;
   }
   .p{
-    font-size: 20px;
-  }
-  nav{
-    display: none
+    font-size: 40px;
   }
 
+  nav
+      {
+          height: 60px;
+      }
+
+      nav .main_pages
+      {
+          display: none;
+      }
+
+      label
+      {
+          width: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          font-size: 40px;
+          color: white;
+          cursor: pointer;
+      }
+
+
     #ap{
-      font-size: 30px;
+      font-size: 65px;
     }
     #trav{
       margin: auto;
@@ -511,4 +575,12 @@ nav li:hover{
       width: 100%;
   }
 
+span{
+  position: relative;
+  width: 100%;
+}
+  #phrase{
+    position: absolute;
+    left: 20%;}
+    }
   /*FORMAT MOBILE*/
